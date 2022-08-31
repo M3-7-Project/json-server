@@ -1,11 +1,99 @@
 {
   "users": [
     {
-      "email": "kenzinho@mail.com",
-      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
-      "name": "Kenzinho",
-      "age": 38,
+      "email": "post@malone.com",
+      "password": "$2a$10$e7LLZ2Yiiq03Q8Ejnetx7undGtRHkPMrAEEGzeBrb/mS6oZbqrVqu",
       "id": 1
+    },
+    {
+      "email": "nome@nome.com",
+      "password": "$2a$10$0Du1cAwwk9KUt1KbvRkD1uwgPGW1CzJ8hZrpAIJBPmmmwZGXJkdj6",
+      "id": 2
+    }
+  ],
+  "production": [
+    {
+      "userId": 1,
+      "profileId": 1,
+      "name": "Twelve Carat Thootache",
+      "type": "album",
+      "preview": "coopedup.mp3",
+      "bio": "É o aspecto bipolar e a dualidade de tudo. E assim, há um monte de coisas nesse álbum que são irônicas. E eu acho que esse álbum inteiro é o mais honesto que eu fiz, e estou tão animado para as pessoas ouvirem. Mas cada música conta uma história, então é tipo, ‘Aqui está a vida que vivemos, mas sempre há algo acontecendo no fundo",
+      "date": "1656820800000",
+      "cover": "https://portalpopline.com.br/wp-content/uploads/2022/06/ab67616d0000b27334362676667a4322838ccc97.jpg",
+      "musics": ["I Like You (A Happier Song)", "Cooped Up", "Reputation", "Lemon Tree"],
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "profileId": 1,
+      "name": "Salveeee",
+      "type": "album",
+      "preview": "coopedup.mp3",
+      "bio": "É o aspecto bipolar e a dualidade de tudo. E assim, há um monte de coisas nesse álbum que são irônicas. E eu acho que esse álbum inteiro é o mais honesto que eu fiz, e estou tão animado para as pessoas ouvirem. Mas cada música conta uma história, então é tipo, ‘Aqui está a vida que vivemos, mas sempre há algo acontecendo no fundo",
+      "date": "1656820800000",
+      "cover": "https://portalpopline.com.br/wp-content/uploads/2022/06/ab67616d0000b27334362676667a4322838ccc97.jpg",
+      "musics": ["I Like You (A Happier Song)", "Cooped Up", "Reputation", "Lemon Tree"],
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "userId": 2,
+      "profileId": 2,
+      "name": "Nome Sobrenome",
+      "body": "Meu comentário",
+      "productionId": 2,
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "name": "Nome Sobrenome",
+      "body": "Meu outro comentário",
+      "productionId": 2,
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "name": "Nome Sobrenome",
+      "body": "Meu comentário na primeira produção",
+      "productionId": 1,
+      "id": 3
+    }
+  ],
+  "score": [
+    {
+      "userId": 2,
+      "productionId": 2,
+      "profileId": 2,
+      "name": "Nome Sobrenome",
+      "id": 1
+    }
+  ],
+  "profiles": [
+    {
+      "userId": 1,
+      "name": "Austin Richard Post",
+      "artistic_name": "Post Malone",
+      "type": "producer",
+      "contact": "postmalone@bussiness.com",
+      "description": "Tenho incontáveis tatuagens e minha música é um calderão fervente de country, grunge, hip-hop e R&B! Eu faço música!",
+      "genre": ["Hip-Hop", "Grunge", "R&B", "Country"],
+      "profile_picture": "https://upload.wikimedia.org/wikipedia/commons/1/12/Post_Malone_at_the_2019_American_Music_Awards.png",
+      "social_media": {
+        "instagram": "https://www.instagram.com/postmalone/",
+        "facebook": "https://www.facebook.com/postmalone",
+        "youtube": "https://www.youtube.com/c/postmalone",
+        "twitter": "https://twitter.com/postmalone"
+      },
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "name": "Nome Sobrenome",
+      "type": "user",
+      "profile_picture": "https://upload.wikimedia.org/wikipedia/commons/1/12/Post_Malone_at_the_2019_American_Music_Awards.png",
+      "id": 2
     }
   ]
 }

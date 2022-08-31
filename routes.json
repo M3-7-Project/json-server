@@ -1,3 +1,11 @@
 {
-  "users": 600
+  "users": 600,
+  "production": 644,
+  "comments": 644,
+  "score": 644,
+  "profiles": 644,
+  "/profiles/:type": "/profiles?type=:type",
+  "/production/:id/stats": "/production/:id?_embed=comments&_embed=score",
+  "/profiles/:id/production": "/profiles?_embed=production&userId=:id",
+  "/profiles/:id/interactions": "/profiles?_embed=comments&_embed=score&userId=2"
 }
