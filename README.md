@@ -494,6 +494,22 @@ _Response:_
 
 ## Extras
 
+Ainda em desenvolvimento.
+<br/>
+
+_/production/:id?\_embed=comments&\_embed=score_
+<br/>
+
+_/profiles?type=:type_
+<br/>
+
+_/profiles?\_embed=production&userId=:id_
+<br/>
+
+_/profiles?\_embed=comments&\_embed=score&userId=:id_
+<br/>
+<br/>
+
 ### Procurar perfis por tipo - **GET** - /profiles/:type
 
 Procura perfis com o tipo passado por types e retorna-os.

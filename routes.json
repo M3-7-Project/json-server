@@ -7,5 +7,5 @@
   "/profiles/:type": "/profiles?type=:type",
   "/production/:id/stats": "/production/:id?_embed=comments&_embed=score",
   "/profiles/:id/production": "/profiles?_embed=production&userId=:id",
-  "/profiles/:id/interactions": "/profiles?_embed=comments&_embed=score&userId=2"
+  "/profiles/:id/interactions": "/profiles?_embed=comments&_embed=score&userId=:id"
 }
