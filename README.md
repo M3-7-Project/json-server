@@ -47,7 +47,7 @@ Para criar um produtor:
 ```
 
 Para criar um usuário:
-
+Terá apenas os campos name, type, profile_picture e userId
 ```json
 {
   ...
