@@ -21,24 +21,11 @@ _Response:_
 
 ```json
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBvc3RAbWFsb25lLmNvbSIsImlhdCI6MTY2MTg5MTU2MywiZXhwIjoxNjYxODk1MTYzLCJzdWIiOiIyIn0.2B7lCiHqWZun6x42WKOYl45-yL1BAQpNQn8B7XAd4LA",
-  "user": {
-    "email": "post@malone.com",
-    "name": "Austin Richard Post",
-    "artistic_name": "Post Malone",
-    "type": "producer",
-    "contact": "postmalone@bussiness.com",
-    "description": "Tenho incontáveis tatuagens e minha música é um calderão fervente de country, grunge, hip-hop e R&B! Eu faço música!",
-    "genre": ["Hip-Hop", "Grunge", "R&B", "Country"],
-    "profile_picture": "https://upload.wikimedia.org/wikipedia/commons/1/12/Post_Malone_at_the_2019_American_Music_Awards.png",
-    "social_media": {
-      "instagram": "https://www.instagram.com/postmalone/",
-      "facebook": "https://www.facebook.com/postmalone",
-      "youtube": "https://www.youtube.com/c/postmalone",
-      "twitter": "https://twitter.com/postmalone"
-    },
-    "id": 2
-  }
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVhZUBub21lLmNvbSIsImlhdCI6MTY2MTk4MTU2MCwiZXhwIjoxNjYxOTg1MTYwLCJzdWIiOiIzIn0.m7o9STOFgG5Xw8oks6zZpjUdYW4g2go8AUDs37Ryb4I",
+	"user": {
+		"email": "eae@nome.com",
+		"id": 3
+	}
 }
 ```
 
