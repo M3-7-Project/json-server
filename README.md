@@ -34,7 +34,7 @@ _Response:_
 ### Criar Perfil - **POST** /profiles/
 
 Para adicionar informações sobre o usuário sendo criado, deve-se usar o id dele
-e passar como userId na requisição. Apenas donos logados podem criar seus perfis.
+e passar como userId na requisição. Apenas donos logados podem criar seus perfis. Restrita a usuários logados.
 
 Para criar um produtor:
 
@@ -109,7 +109,8 @@ _Response:_
 ### Procurar Perfil - **GET** - /profiles/:id
 
 Procura todos os perfis caso um id não seja passado. Caso tenha id, retorna o perfil do usuário/produtor com o id correspondente. Pode-se usar filtros para
-encontrar usuários por nome, por exemplo, ` ?name=Post Malone`
+encontrar usuários por nome, por exemplo, ` ?name=Post Malone`.
+Não há restrição para leitura.
 
 _Response:_
 
@@ -141,7 +142,7 @@ _Response:_
 Perfil de usuários apenas podem mudar imagem e nome. Produtores podem atualizar
 Nome, Nome artístico, Descrição, Contato, Redes sociais (Mudar o link do instagram, facebook, twitter e youtube) e Foto de Perfil.
 <br/>
-Apenas donos do respectivo perfil podem atualizá-los.
+Apenas donos do respectivo perfil podem atualizá-los. Restrita a usuários logados.
 
 _Request:_
 
@@ -179,7 +180,7 @@ _Response:_
 
 Deleta o perfil do usuário passado por id.
 <br/>
-Apenas donos do respectivo perfil podem removê-los. Lembrando que o perfil é diferente do usuário (perfil são os detalhes de cada usuário).
+Apenas donos do respectivo perfil podem removê-los. Restrita a usuários logados. Lembrando que o perfil é diferente do usuário (perfil são os detalhes de cada usuário).
 
 _Response:_
 
@@ -236,7 +237,7 @@ _Response:_
 
 Cria um álbum (com array de músicas) ou um single. Deve conter o campo "userId"e "profileId",
 correspondente ao id do usuário dono do álbum. O campo type deve ser **"album"** ou **"single"**
-Produções só podem ser criadas para o usuário que a cria.
+Produções só podem ser criadas para o usuário que a cria. Restrita a usuários logados.
 
 _Request:_
 
@@ -298,7 +299,7 @@ _Response:_
 
 ### Atualizar Produção - **PATCH** - /production/:id
 
-Edita campos da produção com o id correspondente. Apenas o dono da produção consegue atualizá-la. Pode-se atualizar a descrição, data, nome, músicas (adicionar ou excluir),
+Edita campos da produção com o id correspondente. Apenas o dono da produção consegue atualizá-la. Restrita a usuários logados. Pode-se atualizar a descrição, data, nome, músicas (adicionar ou excluir),
 
 _Request:_
 Atualizando nome.
@@ -329,7 +330,7 @@ _Response:_
 
 ### Deletar Produção - **Delete** - /production/:id
 
-Deleta a produção com o respectivo id. Apenas donos podem deletar suas produções.
+Deleta a produção com o respectivo id. Apenas donos podem deletar suas produções. Restrita a usuários logados.
 
 _Response_
 
@@ -345,7 +346,7 @@ _Response_
 
 ### Criar comentário - **POST** - /comments/
 
-Cria um comentário, apenas para usuários autenticados.
+Cria um comentário. Restrita a usuários logados.
 
 _Request:_
 
@@ -406,7 +407,7 @@ _Response:_
 ### Procurar comentários - **GET** - /comments/:id
 
 Procura todos os comentários. Caso o id seja fornecido, o comentário com
-respectivo id é retornado. Disponível à todos.
+respectivo id é retornado. Não há restrição para leitura.
 
 _Response:_
 
@@ -441,7 +442,7 @@ _Response:_
 ### Procurar voto - **GET** - /score/:id
 
 Procura todos os votos. Caso o id seja fornecido, o voto com
-respectivo id é retornado. Disponível à todos.
+respectivo id é retornado. Não há restrição para leitura.
 
 _Response:_
 
@@ -460,7 +461,7 @@ _Response:_
 
 ### Deletar comentário - **DELETE** - /comments/id
 
-Deleta comentários, deve possuir o campo id. Apenas donos dos comentários podem excluí-los.
+Deleta comentários, deve possuir o campo id. Apenas donos dos comentários podem excluí-los. Restrita a usuários logados.
 
 _Response:_
 
@@ -472,7 +473,7 @@ _Response:_
 
 ### Deletar score - **DELETE** - /score/id
 
-Deleta scores, deve possuir o campo id. Apenas donos das scores podem excluí-las.
+Deleta scores, deve possuir o campo id. Apenas donos das scores podem excluí-las. Restrita a usuários logados.
 
 _Response:_
 
@@ -480,37 +481,23 @@ _Response:_
 {}
 ```
 
-## Extras
+## Query params úteis
 
-Ainda em desenvolvimento.
 <br/>
 
-_/production/:id?\_embed=comments&\_embed=score_
-<br/>
-
-_/profiles?type=:type_
-<br/>
-
-_/profiles?\_embed=production&userId=:id_
-<br/>
-
-_/profiles?\_embed=comments&\_embed=score&userId=:id_
-<br/>
-<br/>
-
-### Procurar perfis por tipo - **GET** - /profiles/:type
+### Procurar perfis por tipo - **GET** - /profiles?type=:type
 
 Procura perfis com o tipo passado por types e retorna-os.
 
-### Procurar produções com seus stats - **GET** - /production/:id/stats
+### Procurar produções com seus stats - **GET** - /production/:id?\_embed=comments&\_embed=score
 
 Procura por produções com o dado id e retorna seus detalhes junto com seus
 stats (comentários e score).
 
-### Procurar por perfis com suas produções - **GET** - /profiles/:id/production
+### Procurar por perfis com suas produções - **GET** - /profiles?\_embed=production&userId=:id
 
 Procura por perfis e suas respectivas produções a partir do id de usuário.
 
-### Procurar por perfis com suas interações - **GET** - /profiles/:id/interactions
+### Procurar por perfis com suas interações - **GET** - /profiles?\_embed=comments&\_embed=score&userId=:id
 
 Procura por perfis e suas respectivas interações a partir do id de usuário.
