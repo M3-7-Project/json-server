@@ -236,6 +236,7 @@ _Response:_
 
 Cria um álbum (com array de músicas) ou um single. Deve conter o campo "userId"e "profileId",
 correspondente ao id do usuário dono do álbum. O campo type deve ser **"album"** ou **"single"**
+Produções só podem ser criadas para o usuário que a cria.
 
 _Request:_
 
