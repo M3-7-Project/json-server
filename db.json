@@ -6,9 +6,24 @@
       "id": 1
     },
     {
-      "email": "nome@nome.com",
-      "password": "$2a$10$0Du1cAwwk9KUt1KbvRkD1uwgPGW1CzJ8hZrpAIJBPmmmwZGXJkdj6",
+      "email": "travis@scott.com",
+      "password": "$2a$10$k8qq.XUy/CNcLhx4O2wIh.SfEmPUuAf5DDAofRlqXf1Mj5ouPn.di",
       "id": 2
+    },
+    {
+      "email": "system@down.com",
+      "password": "$2a$10$Mjbwn9YL6fRdzMwz32isyOKChL7jw5iIXbwji811bQ5TU9cMQDd8W",
+      "id": 3
+    },
+    {
+      "email": "pop@smoke.com",
+      "password": "$2a$10$gOZyeOI0XL2ssqTsv0n0y.9wkUoqDZcWRmZsBq5GPdRN7O1g70NKq",
+      "id": 4
+    },
+    {
+      "email": "john@doe.com",
+      "password": "$2a$10$NvcRFxEv9ei13dBPX4BISuh.qg3tn7YX8Y/Z7s4SpAlq0FLfBJfKG",
+      "id": 5
     }
   ],
   "production": [
@@ -25,49 +40,100 @@
       "id": 1
     },
     {
-      "userId": 1,
-      "profileId": 1,
-      "name": "Salveeee",
+      "userId": 2,
+      "profileId": 2,
+      "name": "Utopia",
       "type": "album",
-      "preview": "coopedup.mp3",
-      "bio": "É o aspecto bipolar e a dualidade de tudo. E assim, há um monte de coisas nesse álbum que são irônicas. E eu acho que esse álbum inteiro é o mais honesto que eu fiz, e estou tão animado para as pessoas ouvirem. Mas cada música conta uma história, então é tipo, ‘Aqui está a vida que vivemos, mas sempre há algo acontecendo no fundo",
-      "date": "1656820800000",
-      "cover": "https://portalpopline.com.br/wp-content/uploads/2022/06/ab67616d0000b27334362676667a4322838ccc97.jpg",
-      "musics": ["I Like You (A Happier Song)", "Cooped Up", "Reputation", "Lemon Tree"],
+      "preview": "utopia.mp3",
+      "bio": "Utopia é o quarto álbum de estúdio do rapper americano Travis Scott. Está programado para ser lançado pela Cactus Jack Records e pela Epic Records. O álbum seguirá seu terceiro álbum de estúdio Astroworld ",
+      "date": "1671926400000",
+      "cover": "https://i1.sndcdn.com/artworks-136EFIzrEg3AVyHI-54oGwg-t500x500.jpg",
+      "musics": ["NIAGARA FALLS (Ft. 21 Savage)", "IN MY HEAD (Ft. CyHi & Swae Lee)", "GOD’S COUNTRY", "HEARTBEAT"],
       "id": 2
+    },
+    {
+      "userId": 3,
+      "profileId": 3,
+      "name": "Mezmerize Remastered",
+      "type": "album",
+      "preview": "byob.mp3",
+      "bio": "Mezmerize Remastered é um álbum de estúdio remasterizado a partir do álbum Mesmerize lançado em 2005. Conta com novas músicas e melhorias na qualidade.",
+      "date": "1672876800000",
+      "cover": "https://m.media-amazon.com/images/I/71Mby0cpvxL._AC_SL1500_.jpg",
+      "musics": ["Soldier Side (intro) - Remastered", "B.Y.O.B. - Remastered", "Cigaro - Remastered", "Revenga - Remastered"],
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "profileId": 4,
+      "name": "Street Professor",
+      "type": "single",
+      "preview": "war.mp3",
+      "bio": "Street Professor é um single póstumo do cantor Pop Smoke. Sua primeira aparição foi um um story de Rowdy em dezembro de 2020. E, hoje, possui uma data de lançamento oficial!",
+      "date": "1663286400000",
+      "cover": "https://t2.genius.com/unsafe/327x327/https%3A%2F%2Fimages.genius.com%2F41eeb550a79204cee6bdee9acdb584a2.1000x1000x1.jpg",
+      "musics": ["Street Professor"],
+      "id": 4
     }
   ],
   "comments": [
     {
-      "userId": 2,
-      "profileId": 2,
-      "name": "Nome Sobrenome",
-      "body": "Meu comentário",
-      "productionId": 2,
-      "id": 1
-    },
-    {
-      "userId": 2,
-      "name": "Nome Sobrenome",
-      "body": "Meu outro comentário",
-      "productionId": 2,
+      "userId": 5,
+      "name": "John Doe",
+      "body": "Mal posso esperar por esse álbum!",
+      "productionId": 1,
       "id": 2
     },
     {
-      "userId": 2,
-      "name": "Nome Sobrenome",
-      "body": "Meu comentário na primeira produção",
-      "productionId": 1,
+      "userId": 5,
+      "name": "John Doe",
+      "body": "O homem tá voltando com tudo 🔥",
+      "productionId": 2,
       "id": 3
+    },
+    {
+      "userId": 5,
+      "name": "John Doe",
+      "body": "As lendas 🤘🤘",
+      "productionId": 3,
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "name": "John Doe",
+      "body": "Mais uma do Rei de New York 🔥",
+      "productionId": 4,
+      "id": 5
     }
   ],
   "score": [
     {
-      "userId": 2,
+      "userId": 5,
+      "profileId": 5,
+      "productionId": 1,
+      "name": "John Doe",
+      "id": 2
+    },
+    {
+      "userId": 5,
+      "profileId": 5,
       "productionId": 2,
-      "profileId": 2,
-      "name": "Nome Sobrenome",
-      "id": 1
+      "name": "John Doe",
+      "id": 3
+    },
+    {
+      "userId": 5,
+      "profileId": 5,
+      "productionId": 3,
+      "name": "John Doe",
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "profileId": 5,
+      "productionId": 4,
+      "name": "John Doe",
+      "id": 5
     }
   ],
   "profiles": [
@@ -90,10 +156,61 @@
     },
     {
       "userId": 2,
-      "name": "Nome Sobrenome",
-      "type": "user",
-      "profile_picture": "https://upload.wikimedia.org/wikipedia/commons/1/12/Post_Malone_at_the_2019_American_Music_Awards.png",
+      "name": "Jacques Berman Webster II",
+      "artistic_name": "Travis Scott",
+      "type": "producer",
+      "contact": "traviscott@bussiness.com",
+      "description": "Jacques Berman Webster II, mais conhecido por seu nome artístico Travis Scott, é um rapper, cantor, compositor e produtor musical norte-americano. Em 2012, Scott assinou seu primeiro grande contrato com a gravadora Epic Records.",
+      "genre": ["Hip-Hop", "Rap"],
+      "profile_picture": "https://pbs.twimg.com/profile_images/634514155261833216/czgYrPLQ_400x400.jpg",
+      "social_media": {
+        "instagram": "https://www.instagram.com/travisscott/",
+        "facebook": "https://www.facebook.com/travisscottlaflame/",
+        "youtube": "https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg",
+        "twitter": "https://twitter.com/trvisxx"
+      },
       "id": 2
+    },
+    {
+      "userId": 3,
+      "name": "System of a Down",
+      "artistic_name": "System of a Down",
+      "type": "producer",
+      "contact": "system@bussiness.com",
+      "description": "System of a Down é uma banda de metal alternativo armeno-americana formada em Glendale, Califórnia em 1994. É composta por Serj Tankian, Daron Malakian, Shavo Odadjian e John Dolmayan. O grupo é conhecido pelas visões políticas e sociais que inserem nas letras de suas canções.",
+      "genre": ["Metal progressivo"],
+      "profile_picture": "https://yt3.ggpht.com/ytc/AMLnZu8mqLDKH0PmjfPrnZ7c1PQoGbDv2iZ4rHBjsv8SjA=s900-c-k-c0x00ffffff-no-rj",
+      "social_media": {
+        "instagram": "https://www.instagram.com/systemofadown/",
+        "facebook": "https://www.facebook.com/systemofadown",
+        "youtube": "https://www.youtube.com/channel/UC7-YMmnc0ppcWmio8t1WdcA",
+        "twitter": "https://twitter.com/systemofadown"
+      },
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "name": "Bashar Barakah Jackson",
+      "artistic_name": "Pop Smoke",
+      "type": "producer",
+      "contact": "popsmoke@bussiness.com",
+      "description": "Bashar Barakah Jackson, mais conhecido pelo nome artístico Pop Smoke, foi um rapper, cantor e compositor estadunidense. Ele colaborou com o rapper Travis Scott, entre outros.",
+      "genre": ["Hip hop", "Brooklyn Drill", "R&B"],
+      "profile_picture": "https://images.tcdn.com.br/img/img_prod/716424/noticia_801705428604264f2d3a38.jpg",
+      "social_media": {
+        "instagram": "https://www.instagram.com/realpopsmoke/",
+        "facebook": "https://www.facebook.com/RealPopSmoke",
+        "youtube": "https://www.youtube.com/channel/UCSaPKJpNd-Mkm6hhelIYSlQ",
+        "twitter": "https://twitter.com/popsmoke10"
+      },
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "name": "John Doe",
+      "type": "user",
+      "profile_picture": "https://assets.catawiki.nl/assets/2017/7/4/2/b/a/2ba6b6c6-405a-4008-ab9d-f478039a67db.jpg",
+      "id": 5
     }
   ]
 }
